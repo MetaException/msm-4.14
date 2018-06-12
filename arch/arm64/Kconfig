@@ -1642,3 +1642,5 @@ config MACH_XIAOMI_TUCANA
 endmenu
 
 endmenu
+
+source "techpack/Kconfig"
