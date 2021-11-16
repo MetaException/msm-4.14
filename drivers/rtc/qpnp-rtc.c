@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2015, 2017-2020, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2015, 2017-2019, The Linux Foundation. All rights reserved.
  * Copyright (C) 2021 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -735,7 +735,6 @@ static int qpnp_rtc_freeze(struct device *dev)
 static const struct dev_pm_ops qpnp_rtc_pm_ops = {
         .freeze = qpnp_rtc_freeze,
 	.restore = qpnp_rtc_restore,
-	.thaw = qpnp_rtc_restore,
 };
 
 static const struct of_device_id spmi_match_table[] = {
