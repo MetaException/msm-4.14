@@ -1759,7 +1759,7 @@ out:
 
 static int ufshcd_clock_scaling_prepare(struct ufs_hba *hba)
 {
-	#define DOORBELL_CLR_TOUT_US		(40*1000*1000) /* 40 sec */
+	#define DOORBELL_CLR_TOUT_US		(2 * 1000 * 1000) /* 2 secs */
 	int ret = 0;
 	/*
 	 * make sure that there are no outstanding requests when
