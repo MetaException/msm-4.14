@@ -2179,7 +2179,6 @@ static int qg_get_ffc_iterm_for_chg(struct qpnp_qg *chip)
 	} else {
 		ffc_terminal_current = FFC_CHG_TERM_CURRENT;
 		pr_debug("ffc_terminal_current other is 830\n", rc);
-#endif
 	}
 	return ffc_terminal_current;
 }
